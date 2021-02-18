@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    /*previous stuff is below, flexbox stuff is above*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: salmon;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.nav-buttons {
+    display: block;
+    background-color: salmon;
+    font-size: 3em;
+}
+
+body {
+    color: darkslategray;
+    background-color: lightblue;
+    font-size: 16px;
+    font-family: "Courier New", monospace;
+}
+
+#welcome {
+    font-size: 2rem;
+    text-align: center;
+    color: salmon;
+    padding: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center; 
+    border-top: 2rem;
+}
+
+.intro-paragraph {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.button {
+    box-sizing: border-box;
+    color: orange;
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.button:hover {
+    display: block;
+
+    box-sizing: border-box;
+    color: blue;
+    background-color: orange;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+
+    width: 200px;
+    margin: 20px auto;
+}
+
+.h1div {
+    display: flex;
+    justify-content: center;
+}
+
+.work-box
+ {
+    display: flex;
+    justify-content: center;
+}
+
+.projectsdiv {
+    display: flex;
+    justify-content: center;
+    /*flex-direction: column;*/
+}
+
+.projects {
+    display: inline-block;
+}
+
+.photogridcontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.photogrid {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.unsplash {
+    border: 1px salmon;
+    width: 600px;
+    height: 400px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+    body {
+        background-color: lightskyblue;
+
+    }
+    .photogrid {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .work-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+        background-color: lightgoldenrodyellow;
+    }
+    .photogrid {
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    .work-box {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
